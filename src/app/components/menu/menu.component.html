@@ -1,0 +1,93 @@
+<button mat-raised-button
+        class="example-action-button"
+        (click)="toggleBackground()">
+  Toggle background
+</button>
+
+<nav mat-tab-nav-bar nav-bar>
+  <a mat-tab-link *ngFor="let link of links"
+     (click)="activeLink = link"
+     > {{ link }} </a>
+  <a mat-tab-link disabled>Disabled Link</a>
+</nav>
+
+<hr/>
+
+<mat-tab-group >
+<!-- #enddocregion align-start -->
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<mat-tab-group mat-align-tabs="center">
+  <mat-tab label="First">Content for tab first</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<mat-tab-group mat-align-tabs="end">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+
+<hr/>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Container wrapper -->
+<div class="container-fluid">
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Brand</a>
+
+  <!-- Toggle button -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Collapsible wrapper -->
+  <div
+    class="collapse navbar-collapse"
+    id="navbarSupportedContent"
+    
+  >
+    <!-- Left links -->
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+          >Disabled</a
+        >
+      </li>
+    </ul>
+    <!-- Left links -->
+
+    <!-- Search form -->
+    <form class="d-flex input-group w-auto">
+      <input
+        type="search"
+        class="form-control"
+        placeholder="Type query"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-primary" type="button">
+        Search
+      </button>
+    </form>
+  </div>
+  <!-- Collapsible wrapper -->
+</div>
+<!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
